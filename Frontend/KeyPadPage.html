@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignalSense AI | Secure Dialer & Logs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/KeyPadPage.css">
+</head>
+<body>
+  <div class="orb-bg"></div>
+  <div class="noise-overlay"></div>
+
+  <div class="app-container">
+    <div class="top-nav">
+      <button id="homeBtn" class="glass-btn home-btn">
+        <i class="fas fa-home"></i> Home
+      </button>
+    </div>
+
+    <div class="dashboard">
+      <!-- KEYPAD SECTION -->
+      <div class="keypad-section glass-card">
+        <div class="signal-badge">
+          <i class="fas fa-waveform"></i> Secure Terminal
+        </div>
+        <div class="dialer-display">
+          <span id="dialerNumber" class="digits">📞</span>
+        </div>
+        <div class="keypad-grid" id="keypadGrid"></div>
+        <div class="call-actions">
+          <button id="callBtn" class="action-call"><i class="fas fa-phone-alt"></i> Call</button>
+          <button id="clearBtn" class="action-clear"><i class="fas fa-backspace"></i> Clear</button>
+        </div>
+        <div class="status-message" id="statusMsg"></div>
+      </div>
+
+      <!-- CALL LOGS SECTION -->
+      <div class="logs-section glass-card">
+        <div class="logs-header">
+          <i class="fas fa-history"></i> Live Call Records
+          <span class="refresh-badge" id="refreshLogsBtn"><i class="fas fa-sync-alt"></i></span>
+        </div>
+        <div class="logs-container" id="logsContainer">
+          <div class="loading-logs">Loading call analytics...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ask AI button: icon only + tooltip on hover -->
+    <button id="askAiBtn" class="ask-ai-button" title="Ask AI">
+      <i class="fas fa-robot"></i>
+    </button>
+  </div>
+
+  <script src="/KeyPadPage.js"></script>
+</body>
+</html>
