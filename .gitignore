@@ -1,0 +1,18 @@
+# Environment variables
+.env
+Configure/.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# PyCharm
+.idea/
+
+# Model/Data files
+*.pkl
+*.csv
+*.index
